@@ -1,0 +1,38 @@
+{
+  "name": "demos-node",
+  "version": "1.0.0",
+  "description": "demos nodejs",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cmtp/demos-nodejs.git"
+  },
+  "keywords": [
+    "nodejs",
+    "samples",
+    "examples",
+    "node",
+    "express",
+    "angularjs"
+  ],
+  "author": "cmtp",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cmtp/demos-nodejs/issues"
+  },
+  "homepage": "https://github.com/cmtp/demos-nodejs#readme",
+  "devDependencies": {
+    "morgan": "^1.7.0",
+    "supervisor": "^0.11.0"
+  },
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "mongoose": "^4.5.10",
+    "nodemon": "^1.10.2",
+    "socket.io": "^1.4.8",
+    "static-favicon": "^2.0.0-alpha"
+  }
+}
