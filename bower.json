@@ -1,0 +1,33 @@
+{
+  "name": "demos-node",
+  "description": "demos nodejs",
+  "main": "index.js",
+  "authors": [
+    "cmtp"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "nodejs",
+    "samples",
+    "examples",
+    "node",
+    "express",
+    "angularjs"
+  ],
+  "homepage": "https://github.com/cmtp/demos-nodejs",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "angular-client/bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.5.8",
+    "jquery": "^3.1.0",
+    "angular-sanitize": "^1.5.8",
+    "angular-socket-io": "^0.7.0",
+    "socket.io-client": "^1.4.8"
+  }
+}

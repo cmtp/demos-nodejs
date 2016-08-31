@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Angular Chat Example</title>
+</head>
+<body ng-app="app">
+<div class='container'>
+  <div ng-controller='SocketController'>
+    You are known as: <span ng-bind="user"></span>.
+    <br/>
+    Change your nickname with <code>/nick [yourNewNick]</code>
+    <div class='row'>
+      <div class='col-md-9'>
+        <chat-socket></chat-socket>
+      </div>
+    </div>
+    <div class='row'>
+      &nbsp;
+    </div>
+    <div class='row'>
+      <div class='col-md-8'>
+        <form role='form' novalidate name='form'>
+          <div class='form-group'>
+            <input type='text' style='width: 80%'
+            required
+            ng-max='50'
+            ng-model='message'
+            focus>
+            <button class='btn btn-sm btn-primary'
+              ng-enable='form.$valid'
+              ng-click="sendMessage(message)">Send!</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+    <script src="bower_components/socket.io-client/socket.io.js"></script>
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+    <script src="bower_components/angular-socket-io/socket.js"></script>
+
+    <script src="js/app.module.js"></script>
+    <script src="js/formatter/app.formatter.js"></script>
+    <script src="js/controllers/socket.controller.js"></script>
+    <script src="js/directives/chat.directive.js"></script>
+    <script src="js/factories/socket.factory.js"></script>
+</body>
+</html>

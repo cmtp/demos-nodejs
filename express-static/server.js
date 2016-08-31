@@ -2,8 +2,11 @@ var express = require('express');
 
 var app = express();
 
-app.set('view engine', 'jade');
+app.use(express.static('public'));
+
 app.get('/', (req, res) => {
-    res.render('index', {tit: 'Hola Drupaleros', saludo: 'este deberia ser un saludo..'});
+    // res.render('index');
+    res.send('Hola Mundo');
 });
+
 app.listen(3000);
