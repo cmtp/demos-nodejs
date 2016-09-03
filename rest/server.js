@@ -6,7 +6,7 @@ var app = express();
 
 //------- database initialization
 require('mongoose').Promise = require('q').Promise;
-mongoose.connect('mongodb://localhost:27017/mean-auth');
+mongoose.connect('mongodb://localhost:27017/rest-drupal');
 
 //------- setting express middlewares
 app.use(bodyParser.urlencoded({ extended: true }));
